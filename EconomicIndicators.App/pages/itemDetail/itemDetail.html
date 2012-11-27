@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>itemDetailPage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/itemDetail/itemDetail.css" rel="stylesheet" />
+    <script src="/js/data.js"></script>
+    <script src="/pages/itemDetail/itemDetail.js"></script>
+</head>
+<body>
+    <!-- These templates are used to display each item. -->
+    <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
+        <div class="item">
+            <div class="item-info">
+                <span class="serie-date" data-win-bind="textContent: date"></span>: $ <span class="serie-value" data-win-bind="textContent: value"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- The content that will be loaded and displayed. -->
+    <div class="itemdetailpage fragment">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle"></span>
+            </h1>
+        </header>
+        <div class="content" aria-label="Main content" role="main">
+            <article>
+                <div>
+                    <header>
+                        <h2 class="item-title"></h2>
+                        <h4 class="item-subtitle"></h4>
+                    </header>
+                    <img class="item-image" src="#" />
+                    <div class="item-content"></div>
+                </div>
+                <!-- The content that will be loaded and displayed. -->
+               
+            </article>
+        </div>
+         <section aria-label="Series content" role="list">
+                <div>
+                    <header>
+                        <h2 class="serie-title">Serie</h2>
+                    </header>
+                    <div class="itemslist" aria-label="List of this data series" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none', layout: {type: WinJS.UI.ListLayout} }"></div>
+                </div>
+            </section>
+         
+    </div>
+</body>
+</html>
