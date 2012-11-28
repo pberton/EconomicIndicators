@@ -63,8 +63,10 @@
     <Content Include="images\storelogo.png" />
     <Content Include="images\IVP.jpg" />
     <Content Include="images\UF.jpg" />
-    <Content Include="js\data.js" />
+    <Content Include="js\dataLoader.js" />
+    <Content Include="js\dataProxy.js" />
     <Content Include="js\default.js" />
+    <Content Include="js\head.load.min.js" />
     <Content Include="js\navigator.js" />
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />

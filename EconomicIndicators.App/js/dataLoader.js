@@ -58,12 +58,6 @@
     
     function createData() {
 
-        // These three strings encode placeholder images. You will want to set the
-        // backgroundImage property in your real data to be URLs to images.
-        //var darkGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
-        //var lightGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
-        //var mediumGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
-
         // Each of these sample groups must have a unique key to be displayed
         // separately.
         var sampleGroups = [
@@ -98,9 +92,9 @@
                     // Each of these sample items should have a reference to a particular
                     // group.
                     LoadItemData(0, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
-                    LoadItemData(1, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
-                    LoadItemData(2, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
-                    LoadItemData(3, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
+                    LoadItemData(1, resDiv.querySelector("#lblValor1_2").innerText, resDiv.querySelector("#hypLnk1_2").href);
+                    LoadItemData(2, resDiv.querySelector("#lblValor1_3").innerText, resDiv.querySelector("#hypLnk1_3").href);
+                    LoadItemData(3, resDiv.querySelector("#lblValor1_5").innerText, resDiv.querySelector("#hypLnk1_5").href);
 
                     list.notifyReload();
                 }
