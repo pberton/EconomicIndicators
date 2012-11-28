@@ -53,9 +53,8 @@
         }
     }
 
-    // Returns an array of sample data that can be added to the application's
+    // Creats array of data that will be added to the application's
     // data list. 
-    
     function createData() {
 
         // Each of these sample groups must have a unique key to be displayed
@@ -78,6 +77,7 @@
         });
     }
 
+    // Loads the information in the data array for the application
     function loadData() {
 
         var queryUrl = "http://si3.bcentral.cl/Indicadoressiete/secure/Indicadoresdiarios.aspx";
@@ -101,6 +101,7 @@
             });
     }
 
+    // Loads one item serie data
     function LoadItemData(id, value, link) {
         var item = list.getItem(id).data;
         item.subtitle = "Valor actual: $ " + value;
