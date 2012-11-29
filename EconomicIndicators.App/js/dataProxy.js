@@ -1,1 +1,1 @@
-﻿head.js('/js/dataLoader.js');
+﻿head.js('/js/server/dataLoader-0.0.1.js');

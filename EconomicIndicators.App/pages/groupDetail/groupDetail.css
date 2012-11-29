@@ -40,7 +40,7 @@
 
         .groupdetailpage .itemslist .win-groupheader .group-image {
             -ms-grid-row: 2;
-            background-color: rgba(147, 149, 152, 1);
+            background-color: rgba(0, 0, 0, 1);
             height: 238px;
             margin: 0;
             margin-bottom: 20px;

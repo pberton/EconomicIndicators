@@ -8,6 +8,5 @@ This is a sample of how WinJS applications can be used to build powerful Web-App
 Keywords: 
 	- WinJS
 	- Windows 8
-	- Head.js 
 	- Mesh App
 	- Mixed Web-App model

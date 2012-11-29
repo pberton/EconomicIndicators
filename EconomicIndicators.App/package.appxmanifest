@@ -15,8 +15,8 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Indicadores Económicos" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Indicadores Económicos de Latinoamérica - Chile" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="Indicadores Económicos" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Indicadores Económicos de Latinoamérica - Chile" ForegroundText="light" BackgroundColor="#000000">
+        <DefaultTile ShowName="logoOnly" />
         <SplashScreen Image="images\splashscreen.png" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />

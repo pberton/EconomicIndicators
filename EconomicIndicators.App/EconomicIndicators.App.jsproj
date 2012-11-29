@@ -46,7 +46,7 @@
   <PropertyGroup>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
-    <DefaultLanguage>en-US</DefaultLanguage>
+    <DefaultLanguage>es-CL</DefaultLanguage>
     <PackageCertificateKeyFile>App3_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
@@ -63,11 +63,11 @@
     <Content Include="images\storelogo.png" />
     <Content Include="images\IVP.jpg" />
     <Content Include="images\UF.jpg" />
-    <Content Include="js\dataLoader.js" />
     <Content Include="js\dataProxy.js" />
     <Content Include="js\default.js" />
     <Content Include="js\head.load.min.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="js\server\dataLoader-0.0.1.js" />
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />
     <Content Include="pages\itemDetail\itemDetail.js" />
