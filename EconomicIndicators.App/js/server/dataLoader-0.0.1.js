@@ -1,4 +1,6 @@
-﻿(function () {
+﻿dataLoaderLoaded = true;
+
+(function () {
     "use strict";
 
     var list = new WinJS.Binding.List();
@@ -17,8 +19,7 @@
         getItemReference: getItemReference,
         getItemsFromGroup: getItemsFromGroup,
         resolveGroupReference: resolveGroupReference,
-        resolveItemReference: resolveItemReference,
-        loadData : loadData
+        resolveItemReference: resolveItemReference
     });
 
     // Get a reference for an item, using the group key and item title as a

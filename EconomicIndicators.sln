@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "EconomicIndicators.App", "EconomicIndicators.App\EconomicIndicators.App.jsproj", "{F42A2C3E-B6DD-4E38-A347-678D16A6BC2A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FA4CFC17-1644-4AC1-B1C4-9CA52B163A22}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
