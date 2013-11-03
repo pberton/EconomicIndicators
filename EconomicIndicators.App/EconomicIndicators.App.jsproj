@@ -65,9 +65,7 @@
     <Content Include="images\UF.jpg" />
     <Content Include="js\dataProxy.js" />
     <Content Include="js\default.js" />
-    <Content Include="js\head.load.min.js" />
     <Content Include="js\navigator.js" />
-    <Content Include="js\server\dataLoader-0.0.1.js" />
     <Content Include="pages\itemDetail\itemDetail.css" />
     <Content Include="pages\itemDetail\itemDetail.html" />
     <Content Include="pages\itemDetail\itemDetail.js" />
