@@ -89,12 +89,11 @@
                     var resDiv = document.createElement("div");
                     resDiv.innerHTML = toStaticHTML(result.responseText);
 
-                    // Each of these sample items should have a reference to a particular
-                    // group.
-                    LoadItemData(0, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
-                    LoadItemData(1, resDiv.querySelector("#lblValor1_2").innerText, resDiv.querySelector("#hypLnk1_2").href);
-                    LoadItemData(2, resDiv.querySelector("#lblValor1_3").innerText, resDiv.querySelector("#hypLnk1_3").href);
-                    LoadItemData(3, resDiv.querySelector("#lblValor1_5").innerText, resDiv.querySelector("#hypLnk1_5").href);
+                    // Each of these sample items should have a reference to a particular group.
+                    loadItemData(0, resDiv.querySelector("#lblValor1_1").innerText, resDiv.querySelector("#hypLnk1_1").href);
+                    loadItemData(1, resDiv.querySelector("#lblValor1_2").innerText, resDiv.querySelector("#hypLnk1_2").href);
+                    loadItemData(2, resDiv.querySelector("#lblValor1_3").innerText, resDiv.querySelector("#hypLnk1_3").href);
+                    loadItemData(3, resDiv.querySelector("#lblValor1_5").innerText, resDiv.querySelector("#hypLnk1_5").href);
 
                     list.notifyReload();
                 }
@@ -102,7 +101,7 @@
     }
 
     // Loads one item serie data
-    function LoadItemData(id, value, link) {
+    function loadItemData(id, value, link) {
         var item = list.getItem(id).data;
         item.subtitle = "Valor actual: $ " + value;
 
