@@ -1,6 +1,4 @@
-﻿dataLoaderLoaded = true;
-
-(function () {
+﻿(function () {
     "use strict";
 
     var list = new WinJS.Binding.List();
@@ -19,7 +17,8 @@
         getItemReference: getItemReference,
         getItemsFromGroup: getItemsFromGroup,
         resolveGroupReference: resolveGroupReference,
-        resolveItemReference: resolveItemReference
+        resolveItemReference: resolveItemReference,
+        loadData: loadData
     });
 
     // Get a reference for an item, using the group key and item title as a
@@ -67,10 +66,10 @@
         // Each of these sample items should have a reference to a particular
         // group.
         var sampleItems = [
-            { group: sampleGroups[0], title: "Unidad de Fomento", subtitle: "Valor actual: $ - ", description: "Valor de la Unidad de Fomento en Chile", content: "La Unidad de Fomento (UF) es una unidad de cuenta reajustable de acuerdo con la inflación, usada en Chile. Su código ISO 4217 es CLF. Fue creada por el Decreto Nº 40 del 20 de enero de 1967, siendo su principal y original uso en los préstamos hipotecarios, ya que era una forma de revalorizarlos de acuerdo con las variaciones de la inflación.", backgroundImage: "/images/UF.jpg", series : new WinJS.Binding.List() },
-            { group: sampleGroups[0], title: "Indice de valor promedio", subtitle: "Valor actual: $ - ", description: "Valor del Indice de valor promedio", content: "El Índice de Valor Promedio (IVP) es uno de los sistemas de reajustabilidad autorizados por el Banco Central de Chile al amparo de lo establecido en el número 9 del artículo 35 de su Ley Orgánica Constitucional.", backgroundImage: "/images/IVP.jpg", series : new WinJS.Binding.List()  },
-            { group: sampleGroups[0], title: "Dólar observado", subtitle: "Valor actual: $ - ", description: "Valor del Dólar observado en Chile", content: "Es el promedio de los precios del dólar registrados en las transacciones de un día determinado.", backgroundImage: "/images/dollar.jpg", series : new WinJS.Binding.List()  },
-            { group: sampleGroups[0], title: "Euro", subtitle: "Valor actual: $ - ", description: "Valor del Euro en Chile", content: "El euro (€) es la moneda oficial de 20 países entre ellos 17 de los 27 estados miembros de la Unión Europea (UE) conocidos colectivamente como la Eurozona.", backgroundImage: "/images/euro.jpg", series : new WinJS.Binding.List()  },
+            { group: sampleGroups[0], title: "Unidad de Fomento", subtitle: "Valor actual: $ - ", description: "Valor de la Unidad de Fomento en Chile", content: "La Unidad de Fomento (UF) es una unidad de cuenta reajustable de acuerdo con la inflación, usada en Chile. Su código ISO 4217 es CLF. Fue creada por el Decreto Nº 40 del 20 de enero de 1967, siendo su principal y original uso en los préstamos hipotecarios, ya que era una forma de revalorizarlos de acuerdo con las variaciones de la inflación.", backgroundImage: "/images/UF.png", backgroundImageWide: "/images/UFWide.png", series : new WinJS.Binding.List() },
+            { group: sampleGroups[0], title: "Indice de valor promedio", subtitle: "Valor actual: $ - ", description: "Valor del Indice de valor promedio", content: "El Índice de Valor Promedio (IVP) es uno de los sistemas de reajustabilidad autorizados por el Banco Central de Chile al amparo de lo establecido en el número 9 del artículo 35 de su Ley Orgánica Constitucional.", backgroundImage: "/images/IVP.png",  backgroundImageWide: "/images/IVPWide.png", series : new WinJS.Binding.List()  },
+            { group: sampleGroups[0], title: "Dólar observado", subtitle: "Valor actual: $ - ", description: "Valor del Dólar observado en Chile", content: "Es el promedio de los precios del dólar registrados en las transacciones de un día determinado.", backgroundImage: "/images/USD.png", backgroundImageWide: "/images/USDWide.png", series: new WinJS.Binding.List() },
+            { group: sampleGroups[0], title: "Euro", subtitle: "Valor actual: $ - ", description: "Valor del Euro en Chile", content: "El euro (€) es la moneda oficial de 20 países entre ellos 17 de los 27 estados miembros de la Unión Europea (UE) conocidos colectivamente como la Eurozona.", backgroundImage: "/images/Euro.png", backgroundImageWide: "/images/EuroWide.png", series : new WinJS.Binding.List()  },
         ];
 
         sampleItems.forEach(function (item) {
