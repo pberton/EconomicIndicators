@@ -3,11 +3,11 @@
 (function () {
     "use strict";
 
-    WinJS.Binding.optimizeBindingReferences = true;
-
-    var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
+    var app = WinJS.Application;
     var nav = WinJS.Navigation;
+    var sched = WinJS.Utilities.Scheduler;
+    var ui = WinJS.UI;
 
     app.addEventListener("activated", function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
@@ -19,17 +19,20 @@
                 // Restore application state here.
             }
 
-            if (app.sessionState.history) {
-                nav.history = app.sessionState.history;
-            }
-            args.setPromise(WinJS.UI.processAll().then(function () {
-                if (nav.location) {
-                    nav.history.current.initialPlaceholder = true;
-                    return nav.navigate(nav.location, nav.state);
-                } else {
-                    return nav.navigate(Application.navigator.home);
-                }
-            }));
+            nav.history = app.sessionState.history || {};
+            nav.history.current.initialPlaceholder = true;
+
+            // Optimize the load of the application and while the splash screen is shown, execute high priority scheduled work.
+            ui.disableAnimations();
+            var p = ui.processAll().then(function () {
+                return nav.navigate(nav.location || Application.navigator.home, nav.state);
+            }).then(function () {
+                return sched.requestDrain(sched.Priority.aboveNormal + 1);
+            }).then(function () {
+                ui.enableAnimations();
+            });
+
+            args.setPromise(p);
         }
     });
 
