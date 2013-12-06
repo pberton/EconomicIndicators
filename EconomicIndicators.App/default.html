@@ -20,5 +20,16 @@
     <div id="appbar" data-win-control="WinJS.UI.AppBar" >
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Actualizar', icon:'refresh'}" onclick="Data.loadData()" type="button"></button>
     </div>  
+
+    <div data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'privacy', width:'narrow'}">
+        <div class="win-ui-dark win-header">
+            <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+            <div class="win-label">Privacy Policy</div>
+        </div>
+        <div class="win-content win-settings-section">
+            <h3>Privacy Policy</h3>
+            <div>This application does not collect or share personal information.</div>
+        </div>
+    </div>
 </body>
 </html>
