@@ -1,7 +1,7 @@
 #################
 ## Windows Store
 #################
-*.pfx
+*.App_StoreKey.pfx
 AppPackages/
 
 #################
